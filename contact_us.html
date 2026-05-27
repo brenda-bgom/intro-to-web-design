@@ -4,38 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheets/site.css" />
 </head>
 <body>
 
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About Us</a>
-    <a href="contact_us.html">Contact Us</a>
+     <div id="header">
+            <div id="banner">
+                <h1 style="color: crimson;">Contact Us</h1>
+                 <hr/>
+            </div>
+            <div id="nav">
+            <!--Anchor tags used for internal navigation-->
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contact_us.html">Contact Us</a>
 
-
-    <h1 style="color: crimson;">Contact Us</h1>
-    <hr/>
-
-    <h2>Locations</h2>
+            </div>
+            <div id="main">
+                 <h2>Locations</h2>
     <table>
         <tr> <!--Fila de una tabla-->
+            <th>Logo</th>
             <th>Location</th>
             <th>Opening Hours</th>
             <th>Email Addrees</th>
             <th>Phone Number</th>
         </tr>
         <tr> <!--Columnas de una tabla-->
+            <td>
+                <img class="logo" src="images/foca.jpg" alt="logo1">
+            </td>
             <td>Mandeville</td>
             <td>9:00am - 5:00pm</td>
             <td>mandevillebranch@preservation.com</td>
             <td>3345789273</td>
         </tr>
              <tr> <!--Columnas de una tabla-->
+                <td>
+                <img class="logo" src="images/foca.jpg" alt="logo1">
+            </td>
             <td>Kingston</td>
             <td>9:00am - 5:00pm</td>
             <td>kingstonbranch@preservation.com</td>
             <td>3345787654</td>
         </tr>
              <tr> <!--Columnas de una tabla-->
+                <td>
+                <img class="logo" src="images/foca.jpg" alt="logo1">
+            </td>
             <td>Montego Bay</td>
             <td>9:00am - 5:00pm</td>
             <td>montegobaybran@preservation.com</td>
@@ -65,5 +81,16 @@
         <input type="submit">
 
     </form>
+        
+            </div>
+            <div id="footer">
+                <br><br/>
+                <a href="https://www.amazon.com" target="_blank">Amazon</a> 
+                <!--Target blank sirve para que no se cambie tu pestaña inicial por otra, 
+                o sea, se abre una nueva pestaña para la pagina-->
+        
+            </div>
+        </div>    
+
 </body>
 </html>
