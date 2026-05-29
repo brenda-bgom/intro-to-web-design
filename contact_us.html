@@ -60,7 +60,7 @@
     </table>
 
     <h2>General Inquiries</h2>
-    <form action="confirmation.html">
+    <form action="confirmation.html" id="contactForm">
         <label for="fullname">Name: * </label> <br/>
         <input required type="text" id="fullname" name="fullname">
         <br/><br/>
@@ -79,6 +79,7 @@
         <br/><br/>
 
         <input type="submit">
+        <button type="button" onclick="ClearForm()" >Clear</button>
 
     </form>
         
@@ -90,7 +91,9 @@
                 o sea, se abre una nueva pestaña para la pagina-->
         
             </div>
-        </div>    
+        </div>
+        
+        <script src="scripts/site.js"></script>
 
 </body>
 </html>
