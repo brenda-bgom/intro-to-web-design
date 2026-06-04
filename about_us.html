@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
     <link rel="stylesheet" href="stylesheets/site.css" />
 </head>
 <body>
 
     <div id="header">
-            <div id="banner">
-                 <p>Notification</p>
+            <div id="banner" class="bg-secondary text-white text-center">
+                <p>Random website notification</p>
             </div>
-            <div id="nav">
-            <!--Anchor tags used for internal navigation-->
-                <a href="index.html">Home</a>
-                <a href="about_us.html">About Us</a>
-                <a href="contact_us.html">Contact Us</a>
-
+            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Animal Protection</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="about_us.html">About Us</a>
+                <a class="nav-link" href="contact_us.html">Contact Us</a>
             </div>
-            <div id="main">
+            </div>
+            </div>
+            </nav>
+            <div id="main" class="container">
                  <img src="images/image1.jpg" alt="Camello" height="320"/>
         <!--alt es otro atributo que aparece cuando falla la imagen,
         recomendable dejar siempre el tamaño original (pagina para imagenes pixabay)-->
@@ -27,22 +36,79 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum accusamus similique quas inventore odio nam, delectus quo omnis dolore repellat saepe dicta quae fuga expedita labore pariatur suscipit impedit.</p>
     
         <h2>Daily Tasks</h2>
-        <ul> <!--Para hacer listas no ordenadas-->
-            <li>We patrol preservations</li>
-            <li>We police</li>
-            <li>We protect</li>
-        </ul>
-    
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/frog.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">We patrol</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="contact_us.html" class="btn btn-primary">Go patrol</a>
+                    </div>
+                </div>
+            </div>    
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/zebra.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">We protect</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="contact_us.html" class="btn btn-primary">Go protect</a>
+                    </div>
+                    </div>
+            </div>  
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/foca.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">We Rescue</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="contact_us.html" class="btn btn-primary">Go Rescue</a>
+                    </div>
+                    </div>
+            </div>  
+        </div>      
+    <br/>
         <h2>How you can join</h2>
-        <ol><!--Para hacer listas ordenadas-->
-            <li>Call our recruitment centre</li>
-            <li>Send your resume</li>
-            <li>Attend interviews</li>
-            <li>
-            <a href="contact_us.html">Contact Centre Oficce</a>
-            </li>
-         </ol>
-        
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Call our recruitment center
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Send your resume
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Attend interviews
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+        <br/>
             </div>
             <div id="footer">
                 <br/><br/>
@@ -50,6 +116,7 @@
             </div>
         </div>
         <script src="scripts/jquery.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
         <script src="scripts/site.js"></script>
 </body>
 </html>
